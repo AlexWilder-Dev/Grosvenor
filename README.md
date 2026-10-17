@@ -34,7 +34,7 @@ npm run preview   # serve the build at /grosvenor-arms-brixton/
 npm run og        # rebuild public/og.jpg and the icons (one-off, uses sharp)
 ```
 
-Vite, React, TypeScript, Framer Motion and React Router (HashRouter). Deploys to GitHub Pages from `main` through `.github/workflows/deploy.yml`; set Pages to "GitHub Actions" in the repository settings.
+Vite, React, TypeScript, Framer Motion and React Router (HashRouter). Deploys to GitHub Pages from the default branch through `.github/workflows/deploy.yml`; set Pages to "GitHub Actions" in the repository settings. Asset paths are relative, so the build works whatever the repository is called.
 
 ## Media
 
