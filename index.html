@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>The Grosvenor Arms · Brixton</title>
+    <meta name="description" content="25 beer and cider taps, fresh pizza till 10pm and Sky &amp; TNT Sports. Sidney Road, between Brixton and Stockwell." />
+    <meta name="theme-color" content="#0F3B2C" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="The Grosvenor Arms" />
+    <meta property="og:title" content="The Grosvenor Arms · Brixton" />
+    <meta property="og:description" content="25 beer and cider taps, fresh pizza till 10pm and Sky &amp; TNT Sports. Sidney Road, between Brixton and Stockwell." />
+    <meta property="og:url" content="https://alexwilder-dev.github.io/grosvenor-arms-brixton/" />
+    <meta property="og:image" content="https://alexwilder-dev.github.io/grosvenor-arms-brixton/og.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="The Grosvenor Arms lettered in gold on deep green, beside a pile of colourful keg clips from the bar." />
+    <meta property="og:locale" content="en_GB" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Grosvenor Arms · Brixton" />
+    <meta name="twitter:description" content="25 beer and cider taps, fresh pizza till 10pm and Sky &amp; TNT Sports. Sidney Road, between Brixton and Stockwell." />
+    <meta name="twitter:image" content="https://alexwilder-dev.github.io/grosvenor-arms-brixton/og.jpg" />
+    <meta name="twitter:image:alt" content="The Grosvenor Arms lettered in gold on deep green, beside a pile of colourful keg clips from the bar." />
+
+    <link rel="canonical" href="https://alexwilder-dev.github.io/grosvenor-arms-brixton/" />
+    <link rel="icon" type="image/svg+xml" href="https://alexwilder-dev.github.io/grosvenor-arms-brixton/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://alexwilder-dev.github.io/grosvenor-arms-brixton/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://alexwilder-dev.github.io/grosvenor-arms-brixton/apple-touch-icon.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <p style="padding:24px;color:#F2E8D0;background:#0F3B2C;font-family:Georgia,serif">
+        The Grosvenor Arms, 17 Sidney Road, London SW9 0TP. Mon–Fri 4pm–11:30pm, Sat 12pm–11:30pm, Sun 12pm–10:30pm.
+        Pizza till 10pm daily. Bookings: thegrosvenorarmsbrixton@gmail.com
+      </p>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+    (() => {
+      try {
+        if (location.hash === '#me') localStorage.setItem('me', '1');
+        if (localStorage.getItem('me') || sessionStorage.getItem('pinged')) return;
+        sessionStorage.setItem('pinged', '1');
+      } catch (e) {}
+      const v = new URLSearchParams(location.search).get('v') || 'untagged';
+      fetch('https://ntfy.sh/YOUR-NTFY-TOPIC', {
+        method: 'POST', body: `${v} opened ${location.pathname}`, keepalive: true
+      }).catch(() => {});
+    })();
+    </script>
+  </body>
+</html>
